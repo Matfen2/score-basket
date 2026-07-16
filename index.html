@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Score Basket</title>
+</head>
+<body>
+    <section id="container">
+        <h1>🏀 Score Basket</h1>
+        <div class="table-score">
+            <div class="team">
+                <h2>HOME</h2>
+                <p class="scoreHome">0</p>
+                <div class="list-point">
+                    <button class="add-point" onclick="addPoint(home, 1)">+ 1</button>
+                    <button class="add-point" onclick="addPoint(home, 2)">+ 2</button>
+                    <button class="add-point" onclick="addPoint(home, 3)">+ 3</button>
+                </div>
+            </div>
+
+            <div class="separator">-</div>
+
+            <div class="team">
+                <h2>GUEST</h2>
+                <p class="scoreGuest">0</p>
+                <div class="list-point">
+                    <button class="add-point" onclick="addPoint(guest, 1)">+ 1</button>
+                    <button class="add-point" onclick="addPoint(guest, 2)">+ 2</button>
+                    <button class="add-point" onclick="addPoint(guest, 3)">+ 3</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-reset" onclick="resetScore()">Remettre à zéro</button>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
